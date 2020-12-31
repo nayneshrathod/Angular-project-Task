@@ -1,0 +1,7 @@
+<h1>disabletextbox works!</h1>
+<input type="text" [disabled]= "showbox"  id="box" [value]="name"  >
+<br><br>
+<input type="text" [disabled]= "showbox"  id="box" value={{name}}  >
+<!-- <input type="text" disabled={{showbox}} id="box" value={{name}}  > -->
+<br><br>
+<button (click)="enableBox()">Check</button>

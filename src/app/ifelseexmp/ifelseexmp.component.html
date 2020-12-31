@@ -1,0 +1,13 @@
+<h1>If Else Example Works!</h1>
+<div *ngIf  = "show  else elseblock" >   
+    <h1>IF Block execute</h1>
+</div>
+<hr>
+<div *ngIf="show1=='yes'; then ifblock else elseblock">   </div>
+<ng-template #ifblock>
+<h1>If Block</h1>
+</ng-template>
+
+<ng-template #elseblock>
+<h1>else Block</h1>
+</ng-template>
