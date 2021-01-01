@@ -1,13 +1,27 @@
 <h1>Simple Form Example works!</h1>
 <form (ngSubmit)="onSubmit(myForm.value)" #myForm="ngForm">
+<!-- <form   #myForm="ngForm"> -->
     <input type="text" ngModel name="Username" placeholder="Enter Username"><br>
     <input type="text" ngModel name="Age" placeholder="Enter Age"><br>
     <input type="text" ngModel name="Name" placeholder="Enter Name"><br>
     <input type="text" ngModel name="Address" placeholder="Enter Address"><br>
-    <button>Submit</button>
+    <button (click)="onSubmit(myForm.value)">Submit</button>
 </form>
 
 <hr>
 <div>
-     {{}}
+    <table style="width: 100%;">
+        <tr>
+            <th>Name</th>
+            <th>Username</th>
+            <th>Age</th>
+            <th>Address</th>
+        </tr>
+        <tr *ngFor="let a of nm">
+            <td>{{a.Name}}</td>
+            <td>{{a.Username}}</td>
+            <td>{{a.Age}}</td>
+            <td>{{a.Address}}</td>
+        </tr>
+    </table>
 </div>

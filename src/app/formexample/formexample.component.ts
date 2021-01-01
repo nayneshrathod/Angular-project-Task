@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./formexample.component.css']
 })
 export class FormexampleComponent implements OnInit {
-  nm= [];
+  nm = [];
   constructor() { }
   onSubmit(value) {
     this.nm = value;
